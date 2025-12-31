@@ -1,0 +1,29 @@
+{
+    "name": "express-joi-api",
+    "version": "1.0.0",
+    "description": "Sample Express API with Joi validation and in-memory CRUD for people.",
+    "main": "dist/server.js",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+        "build": "npm run tsoa:spec && npm run tsoa:routes && tsc -p tsconfig.json",
+        "start": "node dist/server.js",
+        "tsoa:spec": "tsoa spec",
+        "tsoa:routes": "tsoa routes"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "joi": "^17.12.1",
+        "morgan": "^1.10.0",
+        "reflect-metadata": "^0.2.2",
+        "swagger-ui-express": "^5.0.1",
+        "tsoa": "^6.4.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/morgan": "^1.9.5",
+        "@types/node": "^20.11.25",
+        "@types/swagger-ui-express": "^4.1.6",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.6.3"
+    }
+}

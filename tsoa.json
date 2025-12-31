@@ -1,0 +1,16 @@
+{
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/controllers/**/*.ts"],
+  "spec": {
+    "outputDirectory": "src/swagger",
+    "specVersion": 3,
+    "name": "Express People API",
+    "description": "API para gerenciamento de pessoas com validação e documentação automática",
+    "version": "1.0.0"
+  },
+  "routes": {
+    "routesDir": "src/routes",
+    "middleware": "express"
+  }
+}

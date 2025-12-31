@@ -1,0 +1,6 @@
+# Arquivos gerados pelo tsoa
+src/routes/routes.ts
+src/swagger/swagger.json
+node_modules/
+dist/
+src/swagger/swagger.json
